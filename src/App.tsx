@@ -95,7 +95,7 @@ function App() {
       <main id="top">
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-media">
-            <img src="/assets/images/experience/image.png" alt="Eleven House-da canlı musiqi ifaçısı səhnədə" fetchPriority="high" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/experience/image.png`} alt="Eleven House-da canlı musiqi ifaçısı səhnədə" fetchPriority="high" />
           </div>
           <div className="hero-overlay" />
           <div className="hero-content page-width">
@@ -121,7 +121,7 @@ function App() {
             <p className="section-intro">Hekayəyə çevrilən gecələr üçün bir məkan. Canlı ifalar, film gecələri, idman və xüsusi tədbirlər üçün bizi izlə.</p>
           </div>
           <div className="event-feature">
-            <div className="event-image image-frame"><img src="/assets/images/events/image.png" alt="Eleven House səhnəsi performans üçün hazırdır" loading="lazy" /></div>
+            <div className="event-image image-frame"><img src={`${import.meta.env.BASE_URL}assets/images/events/image.png`} alt="Eleven House səhnəsi performans üçün hazırdır" loading="lazy" /></div>
             <div className="event-copy">
               <div className="event-label"><CalendarDays size={16} /> İndi Eleven-də</div>
               <h3>Bu gecəni<br /><i>öz gecən et.</i></h3>
@@ -133,7 +133,7 @@ function App() {
 
         <section className="section experience-section" id="experience" aria-labelledby="experience-title">
           <div className="experience-layout page-width">
-            <div className="experience-image image-frame"><img src="/assets/images/gallery/image.png" alt="Eleven House neon işartısı və barda qonaq" loading="lazy" /></div>
+            <div className="experience-image image-frame"><img src={`${import.meta.env.BASE_URL}assets/images/gallery/image.png`} alt="Eleven House neon işartısı və barda qonaq" loading="lazy" /></div>
             <div className="experience-content">
               <p className="eyebrow accent-eyebrow">02 / Təcrübə</p>
               <h2 id="experience-title">Sadəcə bir gecədən<br /><i>daha çox.</i></h2>
@@ -158,7 +158,7 @@ function App() {
             <p className="section-intro">Atmosfer üçün gəl. Bölüşmək üçün bir şey, soyuq bir şey və bir raund daha üçün qal.</p>
             <a className="button button-outline" href={menuUrl} target="_blank" rel="noreferrer">Tam menyuya bax <ArrowUpRight size={17} /></a>
           </div>
-          <div className="menu-visual image-frame"><img src="/assets/images/menu/image.png" alt="Eleven House-da isti işıqlı masalar" loading="lazy" /><span className="image-note">Süfrə sənindir.</span></div>
+          <div className="menu-visual image-frame"><img src={`${import.meta.env.BASE_URL}assets/images/menu/image.png`} alt="Eleven House-da isti işıqlı masalar" loading="lazy" /><span className="image-note">Süfrə sənindir.</span></div>
           <div className="menu-list">
             {menuItems.map((item, index) => (
               <a className="menu-row" href={menuUrl} target="_blank" rel="noreferrer" key={item.label}>
@@ -175,10 +175,10 @@ function App() {
             <a className="text-link" href={instagramUrl} target="_blank" rel="noreferrer"><Instagram size={16} /> @e11even.house</a>
           </div>
           <div className="gallery-grid">
-            <div className="gallery-image gallery-large image-frame"><img src="/assets/images/hero/image.png" alt="Mum işığında masalar və Eleven House səhnəsi" loading="lazy" /></div>
-            <div className="gallery-image gallery-small image-frame"><img src="/assets/images/events/image.png" alt="Eleven House-da qırmızı pərdəli səhnə" loading="lazy" /></div>
+            <div className="gallery-image gallery-large image-frame"><img src={`${import.meta.env.BASE_URL}assets/images/hero/image.png`} alt="Mum işığında masalar və Eleven House səhnəsi" loading="lazy" /></div>
+            <div className="gallery-image gallery-small image-frame"><img src={`${import.meta.env.BASE_URL}assets/images/events/image.png`} alt="Eleven House-da qırmızı pərdəli səhnə" loading="lazy" /></div>
             <div className="gallery-caption"><span className="quote-mark">“</span><p>Yaxşı gecələr yaxşı şirkətlə başlayır.</p><span className="caption-rule" /></div>
-            <div className="gallery-image gallery-wide image-frame"><img src="/assets/images/gallery/image.png" alt="Barda yanan Eleven House neon işartısı" loading="lazy" /></div>
+            <div className="gallery-image gallery-wide image-frame"><img src={`${import.meta.env.BASE_URL}assets/images/gallery/image.png`} alt="Barda yanan Eleven House neon işartısı" loading="lazy" /></div>
           </div>
         </section>
 
@@ -191,7 +191,7 @@ function App() {
         </section>
 
         <section className="visit-section" id="visit" aria-labelledby="visit-title">
-          <div className="visit-image"><img src="/assets/images/hero/image.png" alt="Eleven House-da isti işıqlı interyer" loading="lazy" /></div>
+          <div className="visit-image"><img src={`${import.meta.env.BASE_URL}assets/images/hero/image.png`} alt="Eleven House-da isti işıqlı interyer" loading="lazy" /></div>
           <div className="visit-overlay" />
           <div className="page-width visit-content">
             <p className="eyebrow hero-eyebrow"><span /> 06 / Bizi tap</p>
